@@ -92,3 +92,48 @@ a.czcionka::after {
     height: 50px;
 }
 * { margin: 0; padding: 0; }
+.button{
+    position: relative;
+    background-color:#4CAF50;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    transition-duration: 0,5s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button::after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active::after  {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+.input{
+    width: 40%;
+    padding: 9px  17px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(218, 230, 59);
+    outline: none;
+}
+.input:focus{
+    background-color: #c5d8ee;
+}
